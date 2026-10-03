@@ -36,11 +36,11 @@
         list-style: none;
         margin: 0 23px;
       }
-      nav ul li a{
+      nav ul li a {
         text-decoration: none;
         color: white;
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: rgb(157, 157, 244);
         font-size: 1.02rem;
         /* transition-delay: 5ms; */
@@ -70,21 +70,31 @@
       .purple {
         color: rgb(135, 57, 207);
       }
-      #element{
+      #element {
         color: rgb(135, 57, 207);
       }
-      .secondsection{
+      .secondsection {
         max-width: 80vw;
         margin: auto;
+        height: 80vh;
       }
-      main hr{
+      main hr {
         border: 0;
         background-color: rgb(160, 75, 240);
         height: 1.2px;
         margin: 60px 84px;
       }
-      .secondsection h1{
+      .secondsection h1 {
         font-size: 1.7rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondsection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
       }
     </style>
   </head>
@@ -108,27 +118,27 @@
       <section class="firstsection">
         <div class="leftsection">
           Hello,Myself <span class="purple">Priyanshu Kumar</span>
-          <div>and I'm a </div>
-           <span id="element"></span>
+          <div>and I'm a</div>
+          <span id="element"></span>
         </div>
         <div class="rightsection">
           <img src="pfbg.png" alt="backgroung_image" />
         </div>
       </section>
-<hr>
+      <hr />
       <section class="secondsection">
-        <span class="text-grey">what i have done so far</span>
+        <span class="text-gray">what i have done so far</span>
         <h1>Work Experience</h1>
+        <div class="box"></div>
       </section>
-
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['web developer.', '&amp; a fullstack developer.'],
-      typeSpeed: 50,
-    });
-  </script>
-</body>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["web developer.", "&amp; a fullstack developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>
