@@ -18,41 +18,45 @@
       body {
         background-color: rgb(0, 0, 33);
         color: white;
-        
+
         font-family: "Poppins", sans-serif;
       }
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
         background-color: rgb(18, 18, 62);
       }
-      nav ul{
-
+      nav ul {
         display: flex;
         justify-content: center;
       }
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0 23px;
       }
-      .left{
+      .left {
         font-size: 1.5rem;
       }
-      .firstsection{
+      .firstsection {
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
+        margin: 80px 0;
       }
-      .firstsection div{
+      .firstsection > div {
         width: 30%;
       }
-      .leftsection{
-        background-color: red;
+      .leftsection {
+        font-size: 2rem;
+        margin: 30px 0;
       }
-      .rightsection{
-        background-color: red;
+      .rightsection img {
+        width: 90%;
+        /* margin: 50px 0; */
+      }
+      .purple {
+        color: blueviolet;
       }
     </style>
   </head>
@@ -61,26 +65,27 @@
       <nav>
         <div class="left">Priyanshu Portfolio</div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact me</li>
-            </ul>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contact me</li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <main>
-        <section class="firstsection">
-            <div class="leftsection">Hello,Myself Priyanshu Kumar
-                and i'm a web developer
-            </div>
-            <div class="rightsection">
-                <img src="pfbg.jpg" alt="backgroung_image">
-            </div>
-        </section>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hello,Myself <span class="purple">Priyanshu Kumar</span>
+          <div>and I'm a fullstack developer</div>
+        </div>
+        <div class="rightsection">
+          <img src="pfbg2.png" alt="backgroung_image" />
+        </div>
+      </section>
     </main>
   </body>
 </html>
